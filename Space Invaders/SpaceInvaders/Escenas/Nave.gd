@@ -35,6 +35,9 @@ func _on_TimerDisparo_timeout():
 func destruir():
 	animacion.play("disparado")
 
+func eliminar():
+	get_tree().change_scene("res://Escenas/GameOver.tscn")
+
 	#if !self.is_queued_for_deletion():
 	#	get_parent().remove_child(self)
 	#	queue_free()
